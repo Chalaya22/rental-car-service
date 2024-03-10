@@ -6,24 +6,24 @@ import { CarsList } from '../../components/Cars/CardList/CardList';
 import { EpmtyList } from '../../components/EmptyList/EmptyList';
 import { selectIsLoading } from '../../redux/rentalCars/carsSelectors';
 
-// import { ModalStyles } from 'app/components/modal/Modal.styled';
-// import { closeModal } from 'redux/modal/modalSlice';
+import { ModalStyles } from '../../components/Modal/ModalCommon.styled';
+import { closeModal } from '../../redux/modal/modalSlice';
 
-// import { ModalInfo } from 'app/components/modal/modal-info/ModalInfo';
-// import { selectModalIsOpen } from 'redux/modal/selectors';
+import { ModalInfo } from '../../components/Modal/Modal';
+import { selectModalIsOpen } from '../../redux/modal/modallSelectors';
 
 const Favorite = () => {
   const isLoading = useSelector(selectIsLoading);
   const dispatch = useDispatch();
   const favoriteList = useSelector(selectFavor);
-  // const modalIsOpen = useSelector(selectModalIsOpen);
+  const modalIsOpen = useSelector(selectModalIsOpen);
 
   const handleModalClose = event => {
     event.preventDefault();
-    // dispatch(closeModal());
+    dispatch(closeModal());
   };
   useEffect(() => {
-    // dispatch(closeModal());
+    dispatch(closeModal());
   }, [dispatch]);
   return (
     <>
@@ -33,14 +33,14 @@ const Favorite = () => {
           <CarsList cars={favoriteList} />
         </div>
       </main>
-      {/* <ReactModal
+      <ReactModal
         isOpen={modalIsOpen}
         onRequestClose={handleModalClose}
         appElement={document.body}
-        // style={ModalStyles}
+        style={ModalStyles}
       >
         <ModalInfo></ModalInfo>
-      </ReactModal> */}
+      </ReactModal>
     </>
   );
 };

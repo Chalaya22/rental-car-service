@@ -12,7 +12,6 @@ import {
   DetailCarName,
 } from './Carditem.styled';
 import Button from '../../Button/Button';
-import { ModalInfo } from '../../Modal/Modal';
 
 import { Imagine } from '../../../comonstyles/img';
 
