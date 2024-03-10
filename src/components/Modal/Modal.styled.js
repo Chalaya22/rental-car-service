@@ -25,14 +25,12 @@ export const ModalCarName = styled.p`
   font-weight: 500;
   font-size: 18px;
   line-height: 133%;
-  color: ${({ theme }) => theme.colors.text.carName};
 `;
 
 export const ModalCarDescription = styled.p`
   font-weight: 400;
   font-size: 14px;
   line-height: 143%;
-  color: ${({ theme }) => theme.colors.text.carDesc};
 `;
 
 export const ModalSubTitle = styled.p`
@@ -41,7 +39,6 @@ export const ModalSubTitle = styled.p`
   font-weight: 500;
   font-size: 14px;
   line-height: 143%;
-  color: ${({ theme }) => theme.colors.text.carDesc};
 `;
 
 export const ModalLink = styled.a`
@@ -53,23 +50,10 @@ export const ModalLink = styled.a`
 
   width: max-content;
 
-  background-color: ${({ theme }) => theme.colors.background.button};
-
   border: none;
   border-radius: 12px;
-
-  color: ${({ theme }) => theme.colors.text.button};
 
   font-weight: 600;
   font-size: 14px;
   line-height: 143%;
-
-  transition-property: background-color;
-  transition-duration: ${({ theme }) => theme.transition.duration};
-  transition-timing-function: ${({ theme }) => theme.transition.timingFunction};
-
-  &:hover,
-  &:focus {
-    background-color: ${({ theme }) => theme.colors.background.buttonHover};
-  }
 `;

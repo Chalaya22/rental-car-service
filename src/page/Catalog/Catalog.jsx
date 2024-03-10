@@ -14,7 +14,7 @@ import LoadMore from '../../components/LoadMore/LoadMore';
 
 import { selectModalIsOpen } from '../../redux/modal/modallSelectors';
 import { closeModal } from '../../redux/modal/modalSlice';
-// import { FilterZone } from '../../components/filter-zone/FilterZone';
+import { FilterBlock } from '../../components/FilterBlock/FilterBlock';
 
 import { ModalInfo } from '../../components/Modal/Modal';
 import { ModalStyles } from '../../components/Modal/ModalCommon.styled';
@@ -37,7 +37,7 @@ const Catalog = () => {
     <>
       <main>
         <div>
-          {/* <FilterZone></FilterZone> */}
+          <FilterBlock />
 
           <CatalogStyled>
             {cars.length > 0 && <CarsList cars={cars} />}
