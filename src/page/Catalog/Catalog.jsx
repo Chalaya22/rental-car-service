@@ -54,7 +54,7 @@ const Catalog = () => {
         appElement={document.body}
         style={ModalStyles}
       >
-        <ModalInfo></ModalInfo>
+        <ModalInfo />
       </ReactModal>
     </>
   );

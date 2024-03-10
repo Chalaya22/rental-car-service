@@ -55,8 +55,7 @@ export const ModalInfo = () => {
       <Imagine src={img} alt={`${make} ${model} ${year} by ${rentalCompany}`} />
       <ModalCarInfoWrapper>
         <ModalCarName>
-          {make}
-          {model}, {year}
+          {make},{model}, {year}
         </ModalCarName>
         <DetailsList
           styles={{ maxWidth: '300px', marginBottom: '14px' }}
