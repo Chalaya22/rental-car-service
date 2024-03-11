@@ -23,7 +23,6 @@ export const ModalInfo = () => {
     make,
     year,
     model,
-
     address,
     rentalCompany,
     accessories,

@@ -42,7 +42,7 @@ export const ListItem = ({ car }) => {
   };
   const handleClick = event => {
     event.preventDefault();
-    dispatch(openModal());
+    dispatch(openModal(car));
   };
   const carInfoList = [
     prepareAddress(address)[1],

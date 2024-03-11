@@ -2,7 +2,7 @@ import { combineReducers } from '@reduxjs/toolkit';
 import storage from 'redux-persist/lib/storage';
 import { configureStore } from '@reduxjs/toolkit';
 import { carsReducer } from './rentalCars/carsSlice';
-// import { modalReduser } from './modal/modalSlice';
+import { modalReduser } from './modal/modalSlice';
 import { filterReducer } from './filter/filterSlice';
 import { favoriteReducer } from './favoriteCar/favoriteSlice';
 import {
@@ -24,7 +24,7 @@ const favoritePersistConfig = {
 
 const rootReducer = combineReducers({
   cars: carsReducer,
-  //   modal: modalReduser,
+  modal: modalReduser,
   filter: filterReducer,
   favorite: persistReducer(favoritePersistConfig, favoriteReducer),
 });
