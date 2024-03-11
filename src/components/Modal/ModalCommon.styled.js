@@ -1,8 +1,6 @@
 export const ModalStyles = {
   overlay: {
     zIndex: 100,
-
-    transitionProperty: 'opacity',
   },
   content: {
     maxWidth: '541px',
